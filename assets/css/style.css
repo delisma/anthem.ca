@@ -497,7 +497,10 @@ pre[class*="language-"] {
 	-ms-hyphens: none;
 	hyphens: none;
 }
-
+#bg img {
+	filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
 .image,
 image-l {
 	display: block;

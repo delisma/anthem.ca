@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anthem Labs - Killing the starving artist</title>
+  <link rel="schema.dcterms" href="https://purl.org/dc/terms/" />
+  <meta name="description" content="Anthem Labs is business accelerator for artists and activists" />
+  <meta name="dcterms.description" content="Anthem Labs is business accelerator for artists and activists" />
+  <meta name="dcterms.creator" content="Anthem Labs" />
+  <meta name="dcterms.title" content="Anthem Labs - Killing the starving artist" />
+  <meta name="dcterms.issued" title="W3CDTF" content="2021-12-29" />
+  <meta name="dcterms.modified" title="W3CDTF" content="2021-12-29" />
+  <meta name="dcterms.subject" content="Anthem Labs, education, entrepreneur skills, branding, funding" />
+  <meta name="dcterms.language" title="ISO639-2" content="eng" />
+  <meta name="robots" content="noindex, follow" />
+
+  <meta property="dcterms:issued" content="2021-12-29">
+  <meta property="dcterms:modified" content="2021-12-29">
+  <meta property="dcterms:title" lang="en" content="Anthem Labs - Killing the starving artist" />
+  <meta property="dcterms:creator" lang="en" content="Anthem Labs">
+  <meta property="dcterms:subject" lang="en" title="gccore" content="Anthem Labs, education, entrepreneur skills, branding, funding" />
+  <meta property="dcterms:description" lang="en" content="Anthem Labs is business accelerator for artists and activists" />
+  <meta property="dcterms:title" lang="fr" content="Anthem Labs - Killing the starving artist" />
+  <meta property="dcterms:creator" lang="fr" content="Labos Anthem">
+  <meta property="dcterms:subject" lang="fr" title="gccore" content="Labos Anthem, éducation, compétence d'entrepreneur, image de marque, financement" />
+  <meta property="dcterms:description" lang="fr" content="Les Labos Anthem sont un accélérateur d'affaire pour artistes et activistes" />
+  <link href="./assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebPage",
+        "name": "{{ page.title }}",
+        "url": "{{ page.permalink }}",
+        "author": {
+        "@type": "EducationalOrganization",
+        "name": "{{ site.authorName }}",
+        "url": "{{ site.authorUrl }}",
+        "parentOrganization": {
+            "@type": "EducationalOrganization",
+            "name": "Anthem Labs",
+            "url": "http://www.anthemlabs.ca/"
+          }
+        },
+        "description": "{% if page.description[page.lang] %}{{ page.description[page.lang] }}{% else %}{{ site.site-description[page.lang] }} {% endif %}"
+    }
+  </script>
+</head>
+<body class="splash" vocab="http://schema.org/" resource="#webpage" typeof="WebPage">
+  <div class="frame cover" id="bg" data-wb-randomize='{ "shuffle": true, "selector": "img", "toggle": "hide" }'>
+    <img class="hide" src="./assets/img/Casting.jpg" alt="" />
+    <img class="hide" src="./assets/img/Composition.jpg" alt="" />
+    <img class="hide" src="./assets/img/Lighting.jpg" alt="" />
+    <img class="hide" src="./assets/img/Location.jpg" alt="" />
+    <img class="show" src="./assets/img/Interactions-11.jpg" alt="" />
+  </div>
+  <main class="box imposter" property="mainContentOfPage" resource="#main" typeof="WebPageElement">
+    <div class="stack">
+      <h1 property="name" class="sr-only">Anthem Labs</h1>
+      <div class="row">
+        <div property="publisher" resource="#publisher" typeof="EducationalOrganization">
+          <img src="./assets/sig-blk.svg" width="283" alt="Anthem Labs" property="logo" /><span class="sr-only"> / <span lang="fr">Anthem Labs</span></span>
+          <meta property="name" content="Anthem Labs" />
+          <meta property="name" lang="fr" content="Anthem Labs"/>
+          <meta property="areaServed" typeof="Country" content="Canada" />
+        </div>
+      </div>
+      <div class="">
+        <div class="cluster">
+          <section class="center">
+            <h2 class="sr-only">Anthem Labs</h2>
+            <p class="box"><a href="./en/index.html" class="cta center">English</a></p>
+          </section>
+          <section class="center" lang="fr">
+            <h2 class="sr-only">Anthem Labs</h2>
+            <p class="box"><a href="./fr/index.html" class="cta center">Français</a></p>
+          </section>
+        </div>
+      </div>
+      <div class="cluster">
+        <div class="box">
+          <a href="en/terms.html" class="sp-lk">Terms and conditions</a> <span class="glyphicon glyphicon-asterisk"></span> <a href="fr/avis.html" class="sp-lk" lang="fr">Avis</a>
+        </div>
+        <div>
+          <img src="./assets/wmms-blk.svg" width="127" alt="Symbol of Anthem Labs" /><span class="sr-only"> / <span lang="fr">Symbole d'Anthem Labs</span></span>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
