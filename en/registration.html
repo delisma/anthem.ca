@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anthem Labs - Killing the starving artist</title>
+  <link href="../assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebPage",
+        "name": "{{ page.title }}",
+        "url": "{{ page.permalink }}",
+        "author": {
+        "@type": "EducationalOrganization",
+        "name": "{{ site.authorName }}",
+        "url": "{{ site.authorUrl }}",
+        "parentOrganization": {
+            "@type": "EducationalOrganization",
+            "name": "Anthem Labs",
+            "url": "http://www.anthemlabs.com/"
+        }
+        },
+        "description": "{% if page.description[page.lang] %}{{ page.description[page.lang] }}{% else %}{{ site.site-description[page.lang] }} {% endif %}"
+    }
+  </script>
+</head>
+
+<body class="cover">
+  <header>
+    <div class="sidebar" id="bnr">
+      <div class="brand" property="publisher" typeof="EducationalOrganization">
+        <a href="index.html" property="url">
+          <img src="../assets/sig-blk.svg" alt="Anthem Labs logotype" property="logo" />
+          <span class="sr-only"> / Anthem Labs</span>
+        </a>
+        <meta property="name" content="Anthem Labs">
+        <meta property="areaServed" typeOf="Country" content="Canada" />
+        <link property="logo" href="../assets/wmms-blk.svg" />
+      </div>
+      <section id="lng">
+        <h2 class="sr-only">Language selection</h2>
+        <ul>
+          <li>
+            <a lang="fr" hreflang="fr" href="../fr/index.html">
+              <span class="sr-only">Français</span>
+              <abbr title="Français">fr</abbr>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <span data-trgt="mb-pnl" class="menu hide"></span>
+  </header>
+  <main typeof="WebPageElement">
+    <section class="stack">
+      <h1 class="center" property="name" id="cont">Anthem Labs</h1>
+      <p class="center">Kill the starving artist</p>
+    </section>
+    <h2>Registration form</h2>
+    <form action="" method="post">
+      <fieldset class="stack">
+        <label for="fullname">Full name<input type="text" name="fullname" id="fullname"></label>        
+        <label for="artistname">Artist name<input type="text" name="artistname" id="artistname"></label>        
+        <label for="email">Email address<input type="email" name="email" id="email"></label>
+        <label for="language">Language preference
+          <select name="language" id="language">
+            <option value="">Please select a language preference</option>
+            <option value="english">English</option>
+            <option value="français">Français</option>
+          </select>
+        </label>
+        <label for="sexe">Sexe
+          <select name="sexe" id="sexe">
+            <option value="">Please select a sexe</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+          </select>
+        </label>
+        <fieldset class="stack">
+          <legend>To which ethnic background do you identify yourself?</legend>
+          <label for="background"><input type="checkbox" name="background" id="background-1"> Indigenous</label>
+          <label for="background"><input type="checkbox" name="background" id="background-2"> Black</label>
+          <label for="background"><input type="checkbox" name="background" id="background-3"> Asian</label>
+          <label for="background"><input type="checkbox" name="background" id="background-4"> Latino</label>
+          <label for="background"><input type="checkbox" name="background" id="background-5"> Arabic</label>
+          <label for="background"><input type="checkbox" name="background" id="background-6"> Other</label>
+        </fieldset>
+        <label for="province">Province of residency
+          <select name="province" id="province">
+            <option value="">Please select a province</option>
+            <option value="Ontario">Ontario</option>
+            <option value="Québec">Québec</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset class="stack">
+        <fieldset class="stack">
+          <legend>Art discipline</legend>
+          <label for="discipline"><input type="checkbox" name="discipline" id="discipline-1"> Dance</label>
+          <label for="discipline"><input type="checkbox" name="discipline" id="discipline-2"> Digital Arts</label>
+          <label for="discipline"><input type="checkbox" name="discipline" id="discipline-3"> Inter-Arts</label>
+          <label for="discipline"><input type="checkbox" name="discipline" id="discipline-4"> Literature</label>
+          <label for="discipline"><input type="checkbox" name="discipline" id="discipline-5"> Media Art</label>
+          <label for="discipline"><input type="checkbox" name="discipline" id="discipline-6"> Multidisciplinary Activities</label>
+          <label for="discipline"><input type="checkbox" name="discipline" id="discipline-7"> Music and Sound</label>
+          <label for="discipline"><input type="checkbox" name="discipline" id="discipline-8"> Theatre</label>
+          <label for="discipline"><input type="checkbox" name="discipline" id="discipline-9"> Visual Arts</label>
+        </fieldset>
+        <label for="resume">Upload your artistic/activist resume<input type="file" name="resume" id="resume"></label>        
+        <fieldset class="stack">
+          <legend>How does your art value diversity?</legend>
+          <label for="value"><input type="checkbox" name="value" id="value-1"> I am / we are of diverse background</label>
+          <label for="value"><input type="checkbox" name="value" id="value-2"> My art features diverse representation</label>
+          <label for="value"><input type="checkbox" name="value" id="value-3"> My art features diverse values</label>
+          <label for="value"><input type="checkbox" name="value" id="value-4"> Other <span class="sr-only">if other, please specify</span><input type="text" name="othervalue" id="othervalue" placeholder="Please specify"></label>
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <fieldset class="stack">
+          <legend>In which area(s) our program can help your art?</legend>
+          <label for="areas"><input type="checkbox" name="areas" id="areas-1"> Branding</label>
+          <label for="areas"><input type="checkbox" name="areas" id="areas-2"> Business growth</label>
+          <label for="areas"><input type="checkbox" name="areas" id="areas-3"> Promotion/community/fanbase building</label>
+          <label for="areas"><input type="checkbox" name="areas" id="areas-4"> Funding research</label>
+        </fieldset>
+        <label for="">Describe your main art project<textarea name="description" id="description" cols="30" rows="10"></textarea></label>
+      </fieldset>
+      <label for="disclaimer"><input type="checkbox" name="disclaimer" id="disclaimer"> Disclaimer (agree to the terms and conditions, yada, yada, yada!)</label>
+      <button class="cta center" type="submit">Submit application</button>
+      <!-- <input type="submit" value="Submit application" class="cta center"> -->
+    </form>
+    <div class="pagedetails">
+      <dl id="dtmd" class="cluster">
+        <dt>Date modified:&nbsp;</dt>
+        <dd><time property="dateModified">2021-12-28</time></dd>
+      </dl>
+    </div>
+  </main>
+  <footer id="info">
+    <div class="stack">
+      <div class="landscape">
+        <nav class="container navcurr">
+          <h2 class="sr-only">About Anthem Labs</h2>
+          <p>Follow us everywhere @anthamlabs</p>
+          <ul class="switcher">
+            <li class="icon"><a href="https://">Facebook</a></li>
+            <li class="icon"><a href="https://">Twitter</a></li>
+            <li class="icon"><a href="https://">Instagram</a></li>
+            <li class="icon"><a href="https://">LinkedIn</a></li>
+            <li class="icon"><a href="https://">TikTok</a></li>
+          </ul>
+        </nav>
+        <p>Anthem Labs by Godzspped</p>
+        <address>299 Bank St., Ottawa, Ontario, K2P 1X7, Canada<br>
+          <a href="mailto:%69%6e%66o@%61n%74h%65%6dlabs.c&#111;m">info |At| anthemlabs {DOT} com</a>
+        </address>
+      </div>
+      <div class="brand">
+        <nav>
+          <h2 class="sr-only">About this site</h2>
+          <ul class="switcher">
+            <li><a href="{{ page.i18n.tmpl-menu-footer-communications-social-link[page.lang] }}">Social</a></li>
+            <li><a href="{{ page.i18n.tmpl-menu-footer-communications-terms-link[page.lang] }}">Terms and condition</a></li>
+            <li><a href="{{ page.i18n.tmpl-menu-footer-communications-privacy-link[page.lang] }}">Privacy</a></li>
+          </ul>
+        </nav>
+        <div class="tofpg">
+          <a href="#cont">Top of the page <span class="glyphicon glyphicon-chevron-up"></span></a>
+        </div>
+        <div class="box">
+          <img src="../assets/wmms-blk.svg" alt="Anthem Labs logo" />
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

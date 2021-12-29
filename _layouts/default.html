@@ -1,0 +1,28 @@
+{%- assign variables = site.data.variables.core -%}
+{%- capture page_title -%}
+{%- if page.title -%}
+{{ page.title }}
+{%- else -%}
+Page untitled
+{%- endif -%}
+{%- endcapture -%}
+<!DOCTYPE html>
+<html class="no-js" lang="{{ page.lang | default: ' en' }}" dir="{{ variables.tmpl-lang-dir[page.lang] | default: 'ltr' }}">
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ page_title }} - {{ site.title[page.lang] }}</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  {% include metadata.html %}
+  {% include resources-head.html %}
+</head>
+
+<body {% if page.layout !="page" or "default" %} class="{{ page.layout }}" {% endif %}vocab="http://schema.org/" typeof="WebPage">
+  {% include skiplinks.html %}
+  {% include header.html %}
+  {{ content }}
+  {% include footer.html %}
+  {% include resources-footer.html %}
+</body>
+
+</html>
